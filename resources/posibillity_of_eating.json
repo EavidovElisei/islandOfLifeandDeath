@@ -1,0 +1,12 @@
+[
+  {
+  "from": "wolf",
+  "to": "mouse",
+  "percent": 80
+  },
+  {
+  "from": "mouse",
+  "to": "wolf",
+  "percent": 0
+  }
+]
