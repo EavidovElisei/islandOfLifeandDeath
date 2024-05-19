@@ -1,37 +1,62 @@
-package abstracts;
+package models.abstracts;
+
+import consts.Consts;
 
 public  class  Entity {
-    private Double weight;
-    private Integer maxCountOnField;
-    private Integer speed;
-    private Double kgToFullEating;
 
-    public Entity(Double weight, Integer maxCountOnField, Integer speed, Double kgToFullEating) {
+    protected double weight;
+    protected int maxCountOnField;
+    protected int speed;
+    protected double kgToFullEating;
+    public boolean died;
+
+    public Entity(double weight, int maxCountOnField, int speed, double kgToFullEating) {
         this.weight = weight;
         this.maxCountOnField = maxCountOnField;
         this.speed = speed;
         this.kgToFullEating = kgToFullEating;
+        this.died = false;
     }
 
-    public Double getWeight() {
+    public double getWeight() {
         return weight;
     }
 
 
 
-    public Integer getMaxCountOnField() {
+    public int getMaxCountOnField() {
         return maxCountOnField;
     }
 
 
 
-    public Integer getSpeed() {
+    public int getSpeed() {
         return speed;
     }
 
+    public void setWeight(double weight) {
+        this.weight = weight;
+    }
+
+    public void setMaxCountOnField(int maxCountOnField) {
+        this.maxCountOnField = maxCountOnField;
+    }
+
+    public void setSpeed(int speed) {
+        this.speed = speed;
+    }
+
+    public void setKgToFullEating(double kgToFullEating) {
+        this.kgToFullEating = kgToFullEating;
+    }
+
+    public int IncrementHealthPercent(Entity isEating, Entity hasBeenEating){
+        int IncrementHealthPercent = (int) ((Consts.MAX_PERCENT /hasBeenEating.getWeight())*isEating.getKgToFullEating());
+        return IncrementHealthPercent;
+    }
 
 
-    public Double getKgToFullEating() {
+    public double getKgToFullEating() {
         return kgToFullEating;
     }
 

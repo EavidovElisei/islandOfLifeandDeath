@@ -1,6 +1,11 @@
 package service;
-import island.Field;
+
+
+import models.Island;
 
 public interface MoveService {
-    void move()
+
+    public Island move(Island island);
+
 }
+

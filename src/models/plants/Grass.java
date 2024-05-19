@@ -1,8 +1,10 @@
-package plants;
+package models.plants;
 
-import abstracts.Entity;
+
+import models.abstracts.Entity;
 
 public class Grass extends Plant {
+    int Index = 4;
 
     public Grass(Double weight,
                  Integer maxCountOnField,

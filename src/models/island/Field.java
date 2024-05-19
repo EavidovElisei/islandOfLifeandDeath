@@ -1,4 +1,4 @@
-package island;
+package models.island;
 
 public class Field {
     private int x;

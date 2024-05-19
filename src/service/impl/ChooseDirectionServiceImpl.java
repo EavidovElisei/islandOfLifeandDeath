@@ -1,13 +1,16 @@
-package service;
+package service.impl;
 
-import enums.DirectionType;
+
+
+import models.enums.DirectionType;
 
 import java.util.Random;
 
-public class ChooseDirectionService {
+public class ChooseDirectionServiceImpl {
+
     private final Random random;
 
-    public ChooseDirectionService(Random random) {
+    public ChooseDirectionServiceImpl(Random random) {
         this.random = random;
     }
 
@@ -15,5 +18,6 @@ public class ChooseDirectionService {
         random.nextInt(4);
         return DirectionType.values()[random.nextInt(DirectionType.values().length)];
     }
+
 
 }

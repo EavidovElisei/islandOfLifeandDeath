@@ -5,6 +5,12 @@
     "speed": 3,
     "kgToFullEating": 8.0
   },
+  "bear": {
+    "weight": 100.0,
+    "maxCountOnField": 60.0,
+    "speed": 5,
+    "kgToFullEating": 10.0
+  },
   "mouse": {
     "weight": 0.05,
     "maxCountOnField": 500,
@@ -16,6 +22,12 @@
     "maxCountOnField": 20,
     "speed": 30,
     "kgToFullEating": 60
+  },
+  "grass": {
+    "weight": 1,
+    "maxCountOnField": 200,
+    "speed": null,
+    "kgToFullEating": null
   }
 
 

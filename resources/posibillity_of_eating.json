@@ -5,8 +5,83 @@
   "percent": 80
   },
   {
-  "from": "mouse",
-  "to": "wolf",
+  "from": "wolf",
+  "to": "bear",
   "percent": 0
+  },
+  {
+    "from": "wolf",
+    "to": "horse",
+    "percent": 10
+  },
+  {
+    "from": "wolf",
+    "to": "grass",
+    "percent": 0
+  },
+
+
+  {
+    "from": "bear",
+    "to": "wolf",
+    "percent": 0
+  },
+  {
+    "from": "bear",
+    "to": "mouse",
+    "percent": 90
+  },
+  {
+    "from": "bear",
+    "to": "horse",
+    "percent": 40
+  },
+  {
+    "from": "bear",
+    "to": "grass",
+    "percent": 0
+  },
+
+  {
+    "from": "mouse",
+    "to": "wolf",
+    "percent": 0
+  },
+  {
+    "from": "mouse",
+    "to": "bear",
+    "percent": 0
+  },
+  {
+    "from": "mouse",
+    "to": "horse",
+    "percent": 0
+  },
+  {
+    "from": "mouse",
+    "to": "grass",
+    "percent": 100
+  },
+
+
+  {
+    "from": "horse",
+    "to": "wolf",
+    "percent": 0
+  },
+  {
+    "from": "horse",
+    "to": "bear",
+    "percent": 0
+  },
+  {
+    "from": "horse",
+    "to": "mouse",
+    "percent": 0
+  },
+  {
+    "from": "horse",
+    "to": "grass",
+    "percent": 100
   }
 ]

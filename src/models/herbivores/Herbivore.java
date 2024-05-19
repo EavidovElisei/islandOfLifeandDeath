@@ -1,9 +1,12 @@
-package herbivores;
+package models.herbivores;
 
-import abstracts.Animal;
+
+import models.abstracts.Animal;
 
 public abstract class  Herbivore extends Animal {
-    public Herbivore(Double weight, Integer maxCountOnField, Integer speed, Double kgToFullEating) {
+    public boolean wasEaten;
+    public Herbivore(double weight, int maxCountOnField, int speed, double kgToFullEating) {
         super(weight, maxCountOnField, speed, kgToFullEating);
+        this.wasEaten = false;
     }
 }
